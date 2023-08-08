@@ -2,6 +2,18 @@
 |Logo|
 
 |pypi| |conda| |Travis Status| |CircleCI Status| |binder| |gitter| |Zenodo DOI|
+----------------------------------------------------------------------------------------------------
+
+This is a modified version of Scikit-Optimize. You can now add "space_constraint" to skopt. 
+
+Additionally, you can use the following options with constrained optimization using the present modification of skopt:
+initial_point_generator="grid_modified",
+initial_point_generator="lhs_modified",
+initial_point_generator="lhs_pydoe",
+initial_point_generator="sobol_scipy",
+
+-----------------------------------------------------------------------------------------------------
+About Scikit-Optimize:
 
 Scikit-Optimize
 ===============
