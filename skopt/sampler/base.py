@@ -3,7 +3,7 @@ from collections import defaultdict
 
 
 class InitialPointGenerator(object):
-    def generate(self, dimensions, n_samples, random_state=None):
+    def generate(self, dimensions, space_constraint, n_samples, random_state=None):
         raise NotImplemented
 
     def set_params(self, **params):

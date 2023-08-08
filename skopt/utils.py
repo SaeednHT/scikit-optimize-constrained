@@ -16,7 +16,7 @@ from .learning import RandomForestRegressor
 from .learning.gaussian_process.kernels import ConstantKernel
 from .learning.gaussian_process.kernels import HammingKernel
 from .learning.gaussian_process.kernels import Matern
-from .sampler import Sobol, Lhs, Hammersly, Halton, Grid
+from .sampler import Sobol, Lhs, Hammersly, Halton, Grid, Grid_modified, Sobol_scipy, Lhs_modified, Lhs_pyDOE
 from .sampler import InitialPointGenerator
 from .space import Space, Categorical, Integer, Real, Dimension
 
@@ -424,10 +424,10 @@ def cook_initial_point_generator(generator, **kwargs):
     elif isinstance(generator, str):
         generator = generator.lower()
         if generator not in ["sobol", "halton", "hammersly", "lhs", "random",
-                             "grid"]:
+                             "grid", "sobol_scipy", "grid_modified", "lhs_modified", "lhs_pydoe"]:
             raise ValueError("Valid strings for the generator parameter "
                              " are: 'sobol', 'lhs', 'halton', 'hammersly',"
-                             "'random', or 'grid' not "
+                             "'random', 'sobol_scipy', 'grid_modified', 'lhs_modified', 'lhs_pydoe' or 'grid' not "
                              "%s." % generator)
     elif not isinstance(generator, InitialPointGenerator):
         raise ValueError("generator has to be an InitialPointGenerator."
@@ -444,6 +444,14 @@ def cook_initial_point_generator(generator, **kwargs):
             generator = Lhs()
         elif generator == "grid":
             generator = Grid()
+        elif generator == "grid_modified":
+            generator = Grid_modified()
+        elif generator == "sobol_scipy":
+            generator = Sobol_scipy()
+        elif generator == "lhs_modified":
+            generator = Lhs_modified()
+        elif generator == "lhs_pydoe":
+            generator = Lhs_pyDOE()
         elif generator == "random":
             return None
     generator.set_params(**kwargs)
