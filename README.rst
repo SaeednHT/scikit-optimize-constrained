@@ -1,7 +1,4 @@
 
-|Logo|
-
-|pypi| |conda| |Travis Status| |CircleCI Status| |binder| |gitter| |Zenodo DOI|
 ----------------------------------------------------------------------------------------------------
 
 This is a modified version of Scikit-Optimize. You can now add "space_constraint" to skopt. 
