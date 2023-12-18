@@ -41,7 +41,7 @@ Important links
 -  Example notebooks - can be found in examples_.
 -  Issue tracker -
    https://github.com/scikit-optimize/scikit-optimize/issues
--  Releases - https://pypi.python.org/pypi/scikit-optimize
+-  Releases - https://test.pypi.org/project/skopt-modcn/
 
 Install
 -------
@@ -58,21 +58,6 @@ scikit-optimize requires
 You can install the latest release with:
 ::
 
-    pip install scikit-optimize
+    pip install -i https://test.pypi.org/simple/ skopt-modcn==0.0.1
 
-This installs an essential version of scikit-optimize. To install scikit-optimize
-with plotting functionality, you can instead do:
-::
-
-    pip install 'scikit-optimize[plots]'
-
-This will install matplotlib along with scikit-optimize.
-
-In addition there is a `conda-forge <https://conda-forge.org/>`_ package
-of scikit-optimize:
-::
-
-    conda install -c conda-forge scikit-optimize
-
-Using conda-forge is probably the easiest way to install scikit-optimize on
-Windows.
+This installs an essential version of scikit-optimize-constrained.
