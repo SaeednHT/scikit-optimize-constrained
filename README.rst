@@ -27,12 +27,6 @@ optimization algorithms look at
 ``scipy.optimize``
 `here <http://docs.scipy.org/doc/scipy/reference/optimize.html>`_.
 
-.. figure:: https://github.com/scikit-optimize/scikit-optimize/blob/master/media/bo-objective.png
-   :alt: Approximated objective
-
-Approximated objective function after 50 iterations of ``gp_minimize``.
-Plot made using ``skopt.plots.plot_objective``.
-
 Important links
 ---------------
 
@@ -61,3 +55,10 @@ You can install the latest release with:
     pip install -i https://test.pypi.org/simple/ skopt-modcn==0.0.1
 
 This installs an essential version of scikit-optimize-constrained.
+
+Use
+-------
+
+Then use the following:
+
+import skopt_modcn
