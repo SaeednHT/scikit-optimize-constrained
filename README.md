@@ -64,6 +64,7 @@ Use
 -------
 
 Then use the following:
+
 ::
 
    import skopt_modcn
