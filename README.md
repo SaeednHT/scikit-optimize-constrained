@@ -2,6 +2,11 @@
 
 Constrained Scikit-Optimize
 ===========================
+![Static Badge](https://img.shields.io/badge/skopt_modcn-yellow)
+![Static Badge](https://img.shields.io/badge/test.pypi-0.0.1-green)
+![GitHub Repo stars](https://img.shields.io/github/stars/SaeednHT/scikit-optimize-constrained)
+
+
 
 Constrained Scikit-Optimize  ``skopt_modcn`` is a modified version of Scikit-Optimize ``skopt``. You can now add ``space_constraint`` to skopt.
 
@@ -73,8 +78,8 @@ res = skopt.gp_minimize(f, space, n_calls=20, n_initial_points=10, initial_point
 x_best = res.x
 y_best = res.fun
 
-print('The input of the minimum objective function is'+ str(x_best))
-print('The minimum of the objective function is'+ str(y_best))
+print('The input of the minimum objective function is: '+ str(x_best))
+print('The minimum of the objective function is: '+ str(y_best))
 ```
 Sample optimization with constrains:
 ---------------------------------------
@@ -102,8 +107,8 @@ res = skopt_modcn.gp_minimize(f, space, n_calls=20, n_initial_points=10, initial
 x_best = res.x
 y_best = res.fun
 
-print('The input of the minimum objective function is'+ str(x_best))
-print('The minimum of the objective function is'+ str(y_best))
+print('The input of the minimum objective function is: '+ str(x_best))
+print('The minimum of the objective function is: '+ str(y_best))
 ```
 
 
