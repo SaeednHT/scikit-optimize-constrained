@@ -3,9 +3,9 @@
 Constrained Scikit-Optimize
 ===========================
 
-Constrained Scikit-Optimize  (``skopt_modcn``) is a modified version of Scikit-Optimize (``skopt``). You can now add "space_constraint" to skopt.
+Constrained Scikit-Optimize  ``skopt_modcn`` is a modified version of Scikit-Optimize ``skopt``. You can now add ``space_constraint`` to skopt.
 
-Additionally, you can use the following options to use costrained initial points with your constrained optimization (``skopt_modcn``):
+Additionally, you can use the following options to use costrained initial points with your constrained optimization ``skopt_modcn``:
 
 initial_point_generator="grid_modified",
 
@@ -15,8 +15,101 @@ initial_point_generator="lhs_pydoe",
 
 initial_point_generator="sobol_scipy",
 
+
 -----------------------------------------------------------------------------------------------------
-About Scikit-Optimize:
+## Releases
+* [PYPI Releases](https://test.pypi.org/project/skopt-modcn/)
+
+### Prerequisites
+
+Constrained scikit-optimize requires
+
+* Python >= 3.6
+* NumPy (>= 1.13.3)
+* SciPy (>= 0.19.1)
+* joblib (>= 0.11)
+* scikit-learn >= 0.20
+* matplotlib >= 2.0.0
+
+How to install?
+---------------
+
+You can install the latest release with the following command:
+
+
+    pip install -i https://test.pypi.org/simple/ skopt-modcn==0.0.1
+
+This installs an essential version of scikit-optimize-constrained.
+
+How to use?
+-----------
+
+Then use the following in python:
+
+
+    import skopt_modcn
+
+## Authors
+
+* **SaeednHT** - [PurpleBooth](https://github.com/SaeednHT/)
+
+Sample optimization without constrains:
+---------------------------------------
+```
+# Import skopt and numpy
+import skopt
+import numpy as np
+
+# Define the objective function with two inputs
+def f(x):
+    # You can modify this function according to your problem
+    return ( x[0] ) ** 2 + ( x[1] ) ** 2
+
+# Define the domain of the inputs as two real intervals
+space = [(-2.0, 2.0), (-2.0, 2.0)]
+
+# Use skopt.gp_minimize function to find the minimum of the function
+res = skopt.gp_minimize(f, space, n_calls=20, n_initial_points=10, initial_point_generator = "lhs",\
+                        random_state=1, verbose=True)
+
+# Get the best point and the best value observed so far
+x_best = res.x
+y_best = res.fun
+
+print('The input of the minimum objective function is'+ str(x_best))
+print('The minimum of the objective function is'+ str(y_best))
+```
+Sample optimization with constrains:
+---------------------------------------
+```
+# Import skopt_modcn and numpy
+import skopt_modcn
+import numpy as np
+
+# Define the objective function with two inputs
+def f(x):
+    # You can modify this function according to your problem
+    return ( x[0] ) ** 2 + ( x[1] ) ** 2
+
+def constraint(x):
+    return (x[0] / x[1] <= 1) and (x[0] / x[1] >= 0)
+
+# Define the domain of the inputs as two real intervals
+space = [(-2.0, 2.0), (-2.0, 2.0)]
+
+# Use skopt_modcn.gp_minimize function to find the minimum of the function
+res = skopt_modcn.gp_minimize(f, space, n_calls=20, n_initial_points=10, initial_point_generator = "lhs_pyDOE",\
+                              random_state=1, space_constraint=constraint, verbose=True)
+
+# Get the best point and the best value observed so far
+x_best = res.x
+y_best = res.fun
+
+print('The input of the minimum objective function is'+ str(x_best))
+print('The minimum of the objective function is'+ str(y_best))
+```
+-----------------------------------------------------------------------------------------------------
+About the original Scikit-Optimize:
 
 Scikit-Optimize
 ===============
@@ -29,9 +122,8 @@ to be accessible and easy to use in many contexts.
 The library is built on top of NumPy, SciPy and Scikit-Learn.
 
 We do not perform gradient-based optimization. For gradient-based
-optimization algorithms look at
-``scipy.optimize``
-`here <http://docs.scipy.org/doc/scipy/reference/optimize.html>`_.
+optimization algorithms look at 
+* [scipy.optimize](http://docs.scipy.org/doc/scipy/reference/optimize.html)
 
 Important links
 ---------------
@@ -41,34 +133,3 @@ Important links
    https://github.com/scikit-optimize/scikit-optimize/issues
 
 
------------------------------------------------------------------------------------------------------
-## Releases
--  Releases - https://test.pypi.org/project/skopt-modcn/
-* [PYPI](https://test.pypi.org/project/skopt-modcn/) - The web framework used
-
-Install
--------
-
-Constrained scikit-optimize requires
-
-* Python >= 3.6
-* NumPy (>= 1.13.3)
-* SciPy (>= 0.19.1)
-* joblib (>= 0.11)
-* scikit-learn >= 0.20
-* matplotlib >= 2.0.0
-
-You can install the latest release with:
-
-
-    pip install -i https://test.pypi.org/simple/ skopt-modcn==0.0.1
-
-This installs an essential version of scikit-optimize-constrained.
-
-Use
--------
-
-Then use the following:
-
-
-    import skopt_modcn
