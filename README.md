@@ -2,7 +2,9 @@
 
 Constrained Scikit-Optimize
 ===========================
-![Static Badge](https://img.shields.io/badge/skopt_modcn-yellow) ![Static Badge](https://img.shields.io/badge/test.pypi%20version-0.0.1-blue) ![GitHub Repo stars](https://img.shields.io/github/stars/SaeednHT/scikit-optimize-constrained)
+![Static Badge](https://img.shields.io/badge/skopt_modcn-yellow) 
+![Static Badge](https://img.shields.io/badge/test.pypi%20version-0.0.1-blue) 
+![GitHub Repo stars](https://img.shields.io/github/stars/SaeednHT/scikit-optimize-constrained)
 
 
 
@@ -113,6 +115,7 @@ print('The minimum of the objective function is: '+ str(y_best))
 ## Contributors
 ### Developer of ``skopt_modcn``
 * [**SaeednHT**](https://github.com/SaeednHT/)
+
 See also the list of [contributors](https://github.com/SaeednHT/scikit-optimize-constrained/graphs/contributors)
 -----------------------------------------------------------------------------------------------------
 About the original Scikit-Optimize:
