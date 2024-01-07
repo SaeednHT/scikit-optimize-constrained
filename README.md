@@ -20,7 +20,7 @@ initial_point_generator="sobol_scipy",
 ## Releases
 * [PYPI Releases](https://test.pypi.org/project/skopt-modcn/)
 
-### Prerequisites
+## Prerequisites
 
 Constrained scikit-optimize requires
 
@@ -49,9 +49,9 @@ Then use the following in python:
 
     import skopt_modcn
 
-## Authors
+## Developers
 
-* **SaeednHT** - [PurpleBooth](https://github.com/SaeednHT/)
+* [**SaeednHT**](https://github.com/SaeednHT/)
 
 Sample optimization without constrains:
 ---------------------------------------
