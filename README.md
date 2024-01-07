@@ -45,8 +45,8 @@ Then use the following in python:
     import skopt_modcn
 
 
-Sample optimization without constrains:
----------------------------------------
+Sample optimization without constrains using the original ``skopt``:
+--------------------------------------------------------------------
 ```
 # Import skopt and numpy
 import skopt
@@ -71,7 +71,7 @@ y_best = res.fun
 print('The input of the minimum objective function is: '+ str(x_best))
 print('The minimum of the objective function is: '+ str(y_best))
 ```
-Sample optimization with constrains:
+Sample optimization with constrains using ``skopt_modcn``:
 ---------------------------------------
 ```
 # Import skopt_modcn and numpy
