@@ -7,18 +7,8 @@ Constrained Scikit-Optimize
 ![GitHub Repo stars](https://img.shields.io/github/stars/SaeednHT/scikit-optimize-constrained)
 
 
-
+## About
 Constrained Scikit-Optimize  ``skopt_modcn`` is a modified version of Scikit-Optimize ``skopt``. You can now add ``space_constraint`` to skopt.
-
-Additionally, you can use the following options to use costrained initial points with your constrained optimization ``skopt_modcn``:
-
-initial_point_generator="grid_modified",
-
-initial_point_generator="lhs_modified",
-
-initial_point_generator="lhs_pydoe",
-
-initial_point_generator="sobol_scipy",
 
 
 -----------------------------------------------------------------------------------------------------
@@ -110,7 +100,16 @@ y_best = res.fun
 print('The input of the minimum objective function is: '+ str(x_best))
 print('The minimum of the objective function is: '+ str(y_best))
 ```
+## Additional features
+Now, you can use the following options to use costrained initial points with your constrained optimization ``skopt_modcn``:
 
+initial_point_generator="grid_modified",
+
+initial_point_generator="lhs_modified",
+
+initial_point_generator="lhs_pydoe",
+
+initial_point_generator="sobol_scipy",
 
 ## Contributors
 ### Developer of ``skopt_modcn``
