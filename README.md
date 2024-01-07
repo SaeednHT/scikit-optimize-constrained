@@ -34,9 +34,7 @@ optimization algorithms look at
 Important links
 ---------------
 
--  Static documentation - `Static
-   documentation <https://scikit-optimize.github.io/>`__
--  Example notebooks - can be found in examples_.
+-  Skopt documentation - https://scikit-optimize.github.io/
 -  Issue tracker -
    https://github.com/scikit-optimize/scikit-optimize/issues
 -  Releases - https://test.pypi.org/project/skopt-modcn/
@@ -44,7 +42,7 @@ Important links
 Install
 -------
 
-scikit-optimize requires
+Constrained scikit-optimize requires
 
 * Python >= 3.6
 * NumPy (>= 1.13.3)
