@@ -103,13 +103,13 @@ print('The minimum of the objective function is: '+ str(y_best))
 ## Additional features
 Now, you can use the following options to use costrained initial points with your constrained optimization ``skopt_modcn``:
 
-initial_point_generator="grid_modified",
+``initial_point_generator="grid_modified",``
 
-initial_point_generator="lhs_modified",
+``initial_point_generator="lhs_modified",``
 
-initial_point_generator="lhs_pydoe",
+``initial_point_generator="lhs_pydoe",``
 
-initial_point_generator="sobol_scipy",
+``initial_point_generator="sobol_scipy",``
 
 ## Contributors
 ### Developer of ``skopt_modcn``
