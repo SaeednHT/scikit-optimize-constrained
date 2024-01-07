@@ -1,9 +1,11 @@
 
-----------------------------------------------------------------------------------------------------
 
-This is a modified version of Scikit-Optimize. You can now add "space_constraint" to skopt. 
+Constrained Scikit-Optimize
+===========================
 
-Additionally, you can use the following options with constrained optimization using the present modification of skopt:
+Constrained Scikit-Optimize  (``skopt_modcn``) is a modified version of Scikit-Optimize (``skopt``). You can now add "space_constraint" to skopt.
+
+Additionally, you can use the following options to use costrained initial points with your constrained optimization (``skopt_modcn``):
 
 initial_point_generator="grid_modified",
 
@@ -37,7 +39,12 @@ Important links
 -  Skopt documentation - https://scikit-optimize.github.io/
 -  Issue tracker -
    https://github.com/scikit-optimize/scikit-optimize/issues
+
+
+-----------------------------------------------------------------------------------------------------
+## Releases
 -  Releases - https://test.pypi.org/project/skopt-modcn/
+* [PYPI](https://test.pypi.org/project/skopt-modcn/) - The web framework used
 
 Install
 -------
