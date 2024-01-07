@@ -17,7 +17,7 @@ initial_point_generator="sobol_scipy",
 
 
 -----------------------------------------------------------------------------------------------------
-## Releases
+## Releases in pypi
 * [PYPI Releases](https://test.pypi.org/project/skopt-modcn/)
 
 ## Prerequisites
@@ -49,9 +49,6 @@ Then use the following in python:
 
     import skopt_modcn
 
-## Developers
-
-* [**SaeednHT**](https://github.com/SaeednHT/)
 
 Sample optimization without constrains:
 ---------------------------------------
@@ -108,6 +105,12 @@ y_best = res.fun
 print('The input of the minimum objective function is'+ str(x_best))
 print('The minimum of the objective function is'+ str(y_best))
 ```
+
+
+## Contributors
+### Developer of ``skopt_modcn``
+* [**SaeednHT**](https://github.com/SaeednHT/)
+See also the list of [contributors](https://github.com/SaeednHT/scikit-optimize-constrained/graphs/contributors)
 -----------------------------------------------------------------------------------------------------
 About the original Scikit-Optimize:
 
@@ -131,5 +134,3 @@ Important links
 -  Skopt documentation - https://scikit-optimize.github.io/
 -  Issue tracker -
    https://github.com/scikit-optimize/scikit-optimize/issues
-
-
