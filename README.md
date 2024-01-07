@@ -2,9 +2,7 @@
 
 Constrained Scikit-Optimize
 ===========================
-![Static Badge](https://img.shields.io/badge/skopt_modcn-yellow)
-![Static Badge](https://img.shields.io/badge/test.pypi-0.0.1-green)
-![GitHub Repo stars](https://img.shields.io/github/stars/SaeednHT/scikit-optimize-constrained)
+![Static Badge](https://img.shields.io/badge/skopt_modcn-yellow) ![Static Badge](https://img.shields.io/badge/test.pypi%20version-0.0.1-blue) ![GitHub Repo stars](https://img.shields.io/github/stars/SaeednHT/scikit-optimize-constrained)
 
 
 
