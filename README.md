@@ -54,7 +54,7 @@ scikit-optimize requires
 * matplotlib >= 2.0.0
 
 You can install the latest release with:
-::
+
 
     pip install -i https://test.pypi.org/simple/ skopt-modcn==0.0.1
 
@@ -64,6 +64,6 @@ Use
 -------
 
 Then use the following:
-::
+
 
     import skopt_modcn
