@@ -101,7 +101,7 @@ print('The input of the minimum objective function is: '+ str(x_best))
 print('The minimum of the objective function is: '+ str(y_best))
 ```
 ## Additional features
-Now, you can use the following options to use costrained initial points with your constrained optimization ``skopt_modcn``:
+Now, you can add the following options to use costrained initial points with your constrained optimization ``skopt_modcn``:
 
 ``initial_point_generator="grid_modified",``
 
