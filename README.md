@@ -32,7 +32,7 @@ How to install?
 You can install the latest release with the following command:
 
 
-    pip install -i https://test.pypi.org/simple/ skopt-modcn==0.0.2
+    pip install -i https://test.pypi.org/simple/ skopt-modcn
 
 This installs an essential version of scikit-optimize-constrained.
 
