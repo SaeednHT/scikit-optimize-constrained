@@ -25,6 +25,8 @@ Constrained scikit-optimize requires
 * joblib (>= 0.11)
 * scikit-learn >= 0.20
 * matplotlib >= 2.0.0
+* pydoe
+* scikit-optimize
 
 How to install?
 ---------------
