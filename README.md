@@ -33,13 +33,13 @@ How to install?
 
 You can install the latest release with the following commands:
 # Step 1:
-``
+```
 pip install scikit-optimize
-``
+```
 # Step 2:
-``
+```
 pip install pydoe
-``
+```
 # Step 3:
     pip install -i https://test.pypi.org/simple/ skopt-modcn
 
