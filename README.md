@@ -116,8 +116,8 @@ Now, you can use the following options to use costrained initial points with you
 * [**SaeednHT**](https://github.com/SaeednHT/)
 
 See also the list of [contributors](https://github.com/SaeednHT/scikit-optimize-constrained/graphs/contributors)
------------------------------------------------------------------------------------------------------
-About the original Scikit-Optimize:
+
+# About the original Scikit-Optimize:
 
 Scikit-Optimize
 ===============
