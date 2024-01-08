@@ -3,7 +3,7 @@
 Constrained Scikit-Optimize
 ===========================
 ![Static Badge](https://img.shields.io/badge/skopt_modcn-yellow) 
-![Static Badge](https://img.shields.io/badge/test.pypi%20version-0.0.1-blue) 
+![Static Badge](https://img.shields.io/badge/test.pypi%20version-0.0.2-blue) 
 ![GitHub Repo stars](https://img.shields.io/github/stars/SaeednHT/scikit-optimize-constrained)
 
 
@@ -32,7 +32,7 @@ How to install?
 You can install the latest release with the following command:
 
 
-    pip install -i https://test.pypi.org/simple/ skopt-modcn==0.0.1
+    pip install -i https://test.pypi.org/simple/ skopt-modcn==0.0.2
 
 This installs an essential version of scikit-optimize-constrained.
 
