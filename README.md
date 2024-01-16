@@ -54,7 +54,7 @@ Then use the following in python:
     import skopt_modcn
 
 
-Sample optimization without constrains using the original ``skopt``:
+Sample optimization without constraints using the original ``skopt``:
 --------------------------------------------------------------------
 ```
 # Import skopt and numpy
@@ -80,7 +80,7 @@ y_best = res.fun
 print('The input of the minimum objective function is: '+ str(x_best))
 print('The minimum of the objective function is: '+ str(y_best))
 ```
-Sample optimization with constrains using ``skopt_modcn``:
+Sample optimization with constraints using ``skopt_modcn``:
 ----------------------------------------------------------
 ```
 # Import skopt_modcn and numpy
@@ -110,7 +110,7 @@ print('The input of the minimum objective function is: '+ str(x_best))
 print('The minimum of the objective function is: '+ str(y_best))
 ```
 ## Additional features
-Now, you can add the following options to use costrained initial points with your constrained optimization ``skopt_modcn``:
+Now, you can add the following options to use constrained initial points with your constrained optimization ``skopt_modcn``:
 
 ``initial_point_generator="grid_modified",``
 
@@ -136,10 +136,10 @@ minimize (very) expensive and noisy black-box functions. It implements
 several methods for sequential model-based optimization. ``skopt`` aims
 to be accessible and easy to use in many contexts.
 
-The library is built on top of NumPy, SciPy and Scikit-Learn.
+The library is built on top of NumPy, SciPy, and Scikit-Learn.
 
-We do not perform gradient-based optimization. For gradient-based
-optimization algorithms look at 
+Scikit-Optimize does not perform gradient-based optimization. For gradient-based
+optimization algorithms please see 
 * [scipy.optimize](http://docs.scipy.org/doc/scipy/reference/optimize.html)
 
 Important links
