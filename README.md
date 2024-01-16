@@ -43,7 +43,7 @@ pip install pydoe
 ### Step 3:
     pip install -i https://test.pypi.org/simple/ skopt-modcn
 
-This installs an essential version of scikit-optimize-constrained.
+This installs the latest version of scikit-optimize-constrained.
 
 How to use?
 -----------
