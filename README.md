@@ -127,7 +127,7 @@ Now, you can add the following options to use constrained initial points with yo
 See also the list of [contributors](https://github.com/SaeednHT/scikit-optimize-constrained/graphs/contributors)
 
 ## Citation information
-``skopt_modcn`` was introduced in the following preprint:
+``skopt_modcn`` was introduced in the following published paper:
 
 Torbati, S., Daneshmehr, A., Pouraliakbar, H., Asgharian, M., Ahmadi Tafti, S. H., Shum-Tim, D., et al. (2024). Personalized evaluation of the passive myocardium in ischemic cardiomyopathy via computational modeling using Bayesian optimization. Biomech. Model. Mechanobiol. doi: 10.1007/s10237-024-01856-0 [https://doi.org/10.1007/s10237-024-01856-0]
 
