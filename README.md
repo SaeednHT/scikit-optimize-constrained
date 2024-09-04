@@ -129,7 +129,7 @@ See also the list of [contributors](https://github.com/SaeednHT/scikit-optimize-
 ## Citation information
 ``skopt_modcn`` was introduced in the following preprint:
 
-Saeed Torbati, Alireza Daneshmehr, Hamidreza Pouraliakbar et al. Personalized Evaluation of the Passive Myocardium in Ischemic Cardiomyopathy via Computational Modeling Using Bayesian Optimization, 22 April 2024, PREPRINT (Version 1) available at Research Square [https://doi.org/10.21203/rs.3.rs-4295162/v1]
+Torbati, S., Daneshmehr, A., Pouraliakbar, H., Asgharian, M., Ahmadi Tafti, S. H., Shum-Tim, D., et al. (2024). Personalized evaluation of the passive myocardium in ischemic cardiomyopathy via computational modeling using Bayesian optimization. Biomech. Model. Mechanobiol. doi: 10.1007/s10237-024-01856-0 [https://doi.org/10.1007/s10237-024-01856-0]
 
 
 -------------------------------------------------------------------------------------------------------------------
