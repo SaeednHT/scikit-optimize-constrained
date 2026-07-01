@@ -123,6 +123,9 @@ Now, you can add the following options to use constrained initial points with yo
 ## Contributors
 ### Developer of ``skopt_modcn``
 * [**SaeednHT**](https://github.com/SaeednHT/)
+* 
+* [**AlirezaH77**](https://github.com/AlirezaH77)
+* 
 
 See also the list of [contributors](https://github.com/SaeednHT/scikit-optimize-constrained/graphs/contributors)
 
